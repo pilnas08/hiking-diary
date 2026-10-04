@@ -713,13 +713,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
   .trip h3 { margin: 0 0 2px; font-size: 17px; }
   .meta { color: var(--muted); font-size: 13px; }
   .tag, .diff { display: inline-block; font-size: 11px; font-weight: 700; border-radius: 4px; padding: 1px 6px;
-    margin: 0 6px 2px 0; text-transform: uppercase; letter-spacing: .03em; }
+    margin: 0 6px 2px 0; text-transform: uppercase; letter-spacing: .03em; border: 1px solid transparent; }
+  /* Activities and difficulty are filled; seasons are outlined. */
   .tag { background: #8a8577; color: #fff; }
   .tag-hiking { background: var(--accent); } .tag-swimming { background: #1f78b4; }
-  .tag-spring { background: #6aa84f; } .tag-summer { background: #e0a100; }
-  .tag-autumn { background: #c0632b; } .tag-winter { background: #5b7fa6; }
-  .diff { background: transparent; border: 1px solid currentColor; }
-  .diff-easy { color: #3a8a3a; } .diff-medium { color: #c27c0e; } .diff-hard { color: #b03a2e; }
+  .tag-spring, .tag-summer, .tag-autumn, .tag-winter { background: transparent; border-color: currentColor; }
+  .tag-spring { color: #3a8a3a; } .tag-summer { color: #b8960b; }
+  .tag-autumn { color: #d9731a; } .tag-winter { color: #2f6db5; }
+  .diff { color: #fff; }
+  .diff-easy { background: #3a8a3a; } .diff-medium { background: #e07b10; } .diff-hard { background: #c0392b; }
   .body { padding: 4px 12px 14px; }
   .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin: 10px 0; }
   .fact { background: var(--bg); border-radius: 10px; padding: 8px 10px; }
